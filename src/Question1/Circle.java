@@ -27,9 +27,13 @@ public class Circle extends Shape {
         return radius = r;
     }
     public double getCircumference() { return 2 * pi * radius; }
-    public double getArea() { return 3.14 * radius * radius;}
+    public double getArea() { return 3.14 * (radius * radius);}
     @Override
     public String toString() {
         return "A Circle with a radius of " + getRadius() + " which is a subclass of " + super.toString();
+    }
+
+    public void scale(double x) {
+        radius = radius * x;
     }
 }

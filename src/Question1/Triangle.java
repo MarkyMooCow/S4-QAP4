@@ -33,7 +33,7 @@ public class Triangle extends Shape {
         side3 = 1.0;
     }
     public Triangle(double s, String c, boolean f) {
-        super();
+        super(c, f);
         side1 = s;
         side2 = s;
         side3 = s;
@@ -89,4 +89,9 @@ public class Triangle extends Shape {
     } else {
         return "A Triangle with lengths of (" + getSide1() + "/" + getSide2() + "/" + getSide3() + ") which is a subclass of " + super.toString();
     }}
+    public void scale(double x) {
+        side1 = side1 * x;
+        side2 = side2 * x;
+        side3 = side3 * x;
+    }
 }

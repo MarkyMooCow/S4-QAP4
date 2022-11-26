@@ -5,27 +5,41 @@ public class Test {
         // BOB THE CONSTRUCTOR CAN HE CONSTRUCT IT
         // BOB THE CONSTRUCTOR YES HE CAN
         // wait that sounds wrong
-    Circle circle = new Circle(4, "Red", true);
+    Circle circle = new Circle(5, "Red", true);
     Ellipse ellipse = new Ellipse(4, 4, "Red", true);
-    EquilateralTriangle eqTriangle = new EquilateralTriangle(3, "Blue", true);
-    Triangle regTriangle = new Triangle(5, 5, 3, "Red", true);
+    EquilateralTriangle eqTriangle = new EquilateralTriangle(10, "Blue", true);
+    Triangle regTriangle = new Triangle(5, 4, 5, "Red", true);
+
+    // Scaling Time
+    circle.scale(5);
 
     // ToString()
     System.out.println(circle);
-    System.out.println(ellipse);
-    System.out.println(eqTriangle);
+        System.out.println("\n[++++++++++]");
+    System.out.print(ellipse);
+        System.out.println("\n[++++++++++]");
     System.out.println(regTriangle);
+        System.out.println("\n[++++++++++]");
+    System.out.println(eqTriangle);
+        System.out.println("\n[++++++++++]");
 
     // Cool Methods
-    System.out.println(circle.getCircumference());
-    System.out.println(circle.getArea());
-
-    System.out.println(ellipse.getPerimeter());
-    System.out.println(ellipse.getArea());
-
-    System.out.print(eqTriangle.getPerimeter());
-    System.out.print(eqTriangle.getArea());
-
-    System.out.println(regTriangle.getPerimeter());
-    System.out.println(regTriangle.getArea());
+        System.out.println(
+                circle.getCircumference() +
+                "///" +
+                ellipse.getPerimeter() +
+                "///" +
+                eqTriangle.getPerimeter() +
+                "///" +
+                regTriangle.getPerimeter()
+                );
+        System.out.println(
+                circle.getArea() +
+                "///" +
+                ellipse.getArea() +
+                "///" +
+                eqTriangle.getArea() +
+                "///" +
+                regTriangle.getArea()
+        );
 }}

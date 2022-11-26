@@ -1,6 +1,6 @@
 package Question1;
 
-public class Shape {
+public abstract class Shape implements Scalable {
     protected double pi = 3.14;
     protected String color;
     protected boolean filled;

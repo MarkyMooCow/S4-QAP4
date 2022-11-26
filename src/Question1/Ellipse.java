@@ -59,11 +59,12 @@ public class Ellipse extends Shape {
         }
         return y;
     }
+    public void scale(double x) {
+        a = a * x;
+        b = b * x;
+    }
     public String toString() {
         return "An Ellipse with an A of " + getA() + " and a B of " + getB() + " which is a subclass of " + super.toString();
-    }
-
-    public void scale(double x) {
     }
     /* Original Perimeter Solution
 
