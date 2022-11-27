@@ -32,7 +32,6 @@ public class Circle extends Shape {
     public String toString() {
         return "A Circle with a radius of " + getRadius() + " which is a subclass of " + super.toString();
     }
-
     public void scale(double x) {
         radius = radius * x;
     }

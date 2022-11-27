@@ -41,6 +41,8 @@ public class Ellipse extends Shape {
     }
 
     // Area and perimeter
+    // Coders Note: Have never calculated any of these in my life. So these are probably gonna have wrong answers.
+    // But I still tried mah best.
     public double getArea() {
         return pi * a + b;
     }
